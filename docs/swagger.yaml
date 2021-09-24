@@ -74,7 +74,11 @@ schemes:
 produces:
   - application/json
 basePath: movies
-securityDefinitions: {}
+securityDefinitions:
+  API Key - 1:
+    name: API Key
+    type: apiKey
+    in: query
 responses:
   正常応答（映画情報あり）:
     description: Example response
@@ -109,6 +113,9 @@ definitions:
         type: string
         description: 公開日
         format: date
+      director_name:
+        type: string
+        description: 監督名
     required:
       - name
       - description
