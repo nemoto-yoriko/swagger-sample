@@ -54,6 +54,7 @@ paths:
                 type: string
                 description: 処理結果
       description: 指定した映画情報を削除する
+      x-extension-1: null
   /movie/:
     parameters: []
     post:
